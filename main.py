@@ -23,7 +23,7 @@ for row in data:
         print(row)
     elif i < 20:
         i += 1
-        print('.')
+        print(' .')
 
 f.close()
 
