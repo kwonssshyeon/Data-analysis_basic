@@ -23,11 +23,15 @@ for row in data:
         print(row)
     elif i < 20:
         i += 1
-        print(' .')
+        print('.')
+
+plt.title('plotting')
+plt.plot([10, 20, 30, 40], color='r', linestyle='--', label='asc')
+plt.plot([1, 2, 3, 4], [12, 43, 25, 45], color='g', linestyle=':', label='zigzag')
+plt.plot([40, 30, 20, 10, 0], 'b.', label='desc')
+plt.legend()
+plt.show()
 
 f.close()
 
 print('기상 관측 이래 서울의 최고 기온이 가장 높았던 날은', max_data + '로, ', max_temp, '도 였습니다.')
-
-plt.plot([10,20,30,40])
-plt.show()
